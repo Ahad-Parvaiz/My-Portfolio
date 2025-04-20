@@ -48,8 +48,14 @@
       //disabled for mobile
         mobile: true
     });
-*/
     wow.init();
+    */
+	   if ($(window).width() > 768) { // Only enable WOW on laptop and up
+      var wow = new WOW({
+          mobile: false, // Disable WOW on mobile devices
+      });
+      wow.init();
+  }
 
     /* Nivo Lightbox 
     ========================================================*/
