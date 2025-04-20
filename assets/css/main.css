@@ -1180,6 +1180,15 @@ Start FunFacts CSS
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
+
+	#projects,
+  .projects-grid,
+  .project-item {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+  }
   .projects-grid {
     grid-template-columns: 1fr;
     background-color: #000;
